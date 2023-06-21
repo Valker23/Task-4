@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<style>
+@media screen and (max-width:767px){
+  body{
+
+  }
+}
+div.container-fluid{
+  background-color:white;
+}
+.navbar-inverse {
+    background-color: white;
+    border-color: white;
+}
+@media screen and (max-width: 767px){
+  .navbar-default .navbar-nav>li>a {
+    max-width: 100%
+  }
+  .navbar-default .navbar-nav>.active>a, {
+    width:200%:
+  }
+}
+@media screen and (max-width: 767px){
+  * {
+   
+  
+    margin:0;
+    
+  }
+}
+@media screen and (max-width: 767px){
+  .container-fluid{
+    width:90%;
+  }
+  }
+@media screen and (max-width: 767px){
+  .footer{
+    width:100%;
+  }
+  }
+.heading{
+    background-color:rgb(236, 240, 242);
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    margin:20px auto;
+}
+
+.heading h3{
+    font-size:50px;
+    color:rgb(231, 235, 239);
+    margin-bottom: 25px;
+    position:relative;
+}
+.heading h1::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:4px;
+    display:block;
+    margin:0 auto;
+    background-color:;
+}
+div.container-1{
+    max-width:100%;
+    margin:0 auto;
+    padding:10px 20px;
+    background-color: rgb(219, 226, 226);
+    display:flex;
+    flex-direction:column;
+
+
+}
+.about {
+    display:flex;
+    justify-content: space-between
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+.about-image img{
+    max-width:50%;
+    height:auto;
+    display:flex;
+    transition:0.5s ease;
+
+}
+.about-content{
+    flex:1;
+}
+.about-content  h2{
+    font-size:23px;
+    margin-bottom: 15px;
+    color:#333;
+
+}
+.about-content  p{
+    font-size:18px;
+    line-height:1.5;
+    color:#666;
+}
+.about-content  .read-more{
+    display:inline-block;
+    padding:10px 20px;
+    background-color: #4caf50;
+    color:#2ae769;
+    text-decoration:none;
+    border-radius:25px;
+    margin-top:15px;
+    transition:0.3s ease;
+}
+.about-content  .read-more:hover{
+    background-color: #3e8e41;
+    
+}
+
+@media screen and (max-width: 767px){
+    .heading{
+        padding:0px 15px;
+    }
+    .heading h1{
+        font-size:36px;
+    }
+    .heading p{
+        margin-bottom:0px;
+
+    }
+    .container-1{
+        padding:0px;
+    }
+    .about{
+        padding:20px;
+        flex-direction:column;
+    }
+    .about-image{
+        margin-right:0px;
+        margin-bottom: 40px;
+        
+    }
+    .about-content p{
+        padding:0px;
+        font-size:16px;
+
+    }
+}
+
+@media screen and (max-width: 767px){
+  .about-image{
+    display:flex;
+    flex-direction:row;
+    padding:0px;
+  }
+}
+.img.new{
+  width:100%;
+  height:100px;
+  display:flex;
+  flex-direction:row;
+}
+<!--CRICLE-->
+
+
+div.container{
+    display:flex;
+    justify-content:right;
+    align-content: flex-start;
+    -webkit-flex-flow: row wrap;
+    flex-flow:row wrap;
+    width:100%;
+    height:500px;
+    box-sizing: border-box;
+    align-items:right;
+  
+
+}
+@media screen and (max-width: 540px){
+  div-container {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+.circle{
+   
+    background-color: #8b918b;
+    width:50px;
+    height:50px;
+    border-radius: 1000px;
+    margin:1.90rem;
+    display:flex;
+    flex-direction:row;
+   
+}
+.circle:hover{
+  background-color: #008000;
+  border-style: dotted;
+}
+.aligner{
+  display: flex;
+  align-items:left;
+  justify-content:left;
+  height:100%;
+  text-align:left;
+  flex-direction: row;
+}
+
+
+
+
+.img.old{
+    width: 100%;
+    height: auto;
+
+
+}
+
+.img.hi{
+    width: 100%;
+    height: auto;
+    margin-right:100px;
+
+
+}
+*{
+  margin:0;
+  
+} 
+ 
+
+</style>
+<style>
+
+div{
+    text-align: justify;
+   
+}
+.container-md-fluid{
+    background-color: #fff;
+    width:100%;
+    height:60vh;
+    display:flex;
+    flex-direction:row;
+  
+}
+@media screen and (max-width: 767px){
+  .container-md-fluid{
+  }
+}
+
+@media screen and (max-width: 767px){
+  .img-responsive {
+   width:100%;
+  }
+}
+.img.responsive {
+    width: 100px;
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    float:left;
+  }
+@media screen and (max-width: 767px){
+  .col-sm-3{
+   
+  }
+    
+
+}
+
+.col-sm-3{
+    width:100%;
+    height:100px;
+    border:1px solid black;
+    vertical-align:middle;
+}  
+
+div.container-xxl{
+    background-color:rgb(14, 201, 139);
+    height:60vh;
+    display:flex;
+    flex-direction:row;
+}
+@media screen and (max-width: 767px){
+  .img-fluid{
+   
+  }
+    
+
+}
+.img-fluid{
+    max-width :100%;
+    height:100%;
+    float: left;
+    margin-top: 29px;
+  
+}
+.img-fluid2{
+    max-width :140%;
+    height:105%;
+    float: left;
+    
+    justify-content: space-between;
+  
+}
+@media screen and (max-width: 767px){
+  .flex-container{
+    max-width:100%;
+   
+  }
+}
+@media screen and (max-width: 767px){
+  .container-fluid{
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+
+
+
+*{
+    box-sizing:border-box;
+}
+
+.footer{
+    background-color:#708090;
+    color:#ffffff;
+    text-align: center;
+    font-size:12px;
+    padding:25px;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.container-fluid1{
+         display:flex;
+         width:100%;
+         
+}
+h5.text-right{
+  font-size:2px;
+}
+@media screen and (max-width: 767px){
+ h5.text-right{
+    text-align:center;
+    font-size: 20px;
+  }
+
+}
+@media screen and (max-width: 767px){
+    .container-fluid1{
+      
+        flex-direction:column;
+        max-width:100%;
+        width:100%;
+    }
+} 
+@media screen and (max-width: 400px){
+  .item-1{
+    text-align:center;
+    justify-content:center;
+  }
+}
+@media screen and (max-width: 767px){
+  .img.avatar{
+    text-align:center;
+    justify-content: center;
+  }
+}
+.item-1{
+  background-color:rgb(238, 238, 240);
+ 
+  height:352px;
+  flex-grow: 2;
+ 
+}
+.item-2{
+  background-color:rgb(238, 238, 240);
+
+  height:352px;
+  flex-grow: 1;
+}
+
+.item-3{
+  background-color:rgb(238, 238, 240);
+
+  height:352px;
+  flex-grow: 1;
+}
+
+h3{
+  margin-top:13px;
+}
+
+
+
+.container2{
+    display:flex;
+    height: 400px;
+    padding-right:0px;
+    
+} 
+ 
+
+@media screen and (max-width: 767px){
+    .container2{
+        height:600px;
+        flex-direction:column;
+    }
+} 
+@media screen and (min-width: 767px){
+  .h4{
+  
+    flex-direction: column;
+  }
+  }
+.img-fluid1{
+    max-width: 40%;
+    height:200px;
+   
+} 
+
+span.dotted {
+  height: 60px;
+  width: 60px;
+  background-color: #a17979;
+  border-radius: 50%;
+  display: inline-block;
+  margin:100px;
+  background-color:#252d5d;
+}
+
+
+.responsive {
+  width:70%;
+  height: 250px;
+  margin:auto;
+  padding:auto;
+}
+
+
+h2.heading{
+  background-color: #b0d1f7;
+  float:left;
+  text-align: left;
+}
+
+
+.rows{
+    display:flex;
+    height:369px;
+}
+@media screen and (max-width: 767px){
+    .rows{
+          display:flex;
+          flex-direction:column;
+    }
+}
+.box1{
+    flex:1;
+    
+}
+.box2{
+    flex:1;
+}
+.responsive{
+    width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.about-content  .read-more{
+    display:inline-block;
+    padding:10px 20px;
+    background-color: #4f99ee;
+    color:#e2f3e8;
+    text-decoration:none;
+    border-radius:25px;
+    margin-top:15px;
+    transition:0.3s ease;
+}
+.about-content  .read-more:hover{
+    background-color: #3e8e41;
+    
+}
+</style>
+<style>
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 52px;
+  height:49px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding:13px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding:13px;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding:13px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding:13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px){
+   h8.text-center{
+    margin-top: -52px;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 42px;
+  }
+
+}
+h8.text-center{
+     margin-top: -26px;
+    margin-bottom: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left:-153px;
+}
+.newheading{
+  
+
+}
+
+
+
+
+
+
+.sl:hover{
+  background-color: rgb(252, 240, 255);
+  border:2px solid rgb(226, 233, 224);
+}
+img.round{
+  vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 767px){
+  img.round{
+      margin-left: 219px;
+  }
+}
+
+h9.adva{
+  text-align: center;
+  display:flex;
+  flex-direction: row;
+  margin-top:-32px;
+  
+}
+div.no{
+  text-align:center;
+  font-size:26px;
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+}
+div.no1{
+  text-align:center;
+  font-size:16px;
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+}
+div.no5{
+  text-align:center;
+  font-size:30px;
+  color:rgb(17, 11, 11);
+}
+div.no6{
+  text-align:center;
+  font-size:16px;
+  color:rgb(8, 6, 6);
+  font-family: "Times New Roman", Times, serif;
+  
+}
+div.no8{
+  text-align:center;
+  font-size:28px;
+  color:rgb(8, 6, 6);
+  background-color: rgb(54,54,54);
+  color:white;
+  padding-top:10px;
+} 
+
+
+.container-fluid4{
+  background-color:white;
+  
+}
+p#my{
+  border:0px solid white;
+  height: 211px;
+    width: 334px;
+    margin-left: 89px;
+    margin-top: -229px;
+    color:white;
+   
+}
+@media screen and (max-width:767px){
+  p#my{
+    width: 191px;
+    height: 211px;
+    margin-left: 73px;
+    color:white;
+ 
+    
+  }
+}
+p.h10{
+  color:white;
+}
+
+
+
+
+/* Features Style*/
+
+
+.advacontainer{
+  display:flex;
+  flex-direction:row;
+  border:0px solid rgb(40, 40, 56);
+  max-width:100%;
+  height:auto;
+  padding-top:40px;
+ 
+}
+@media screen and (max-width: 767px){
+  .advacontainer{
+    display:flex;
+  flex-direction:column;
+  border:0px solid rgb(40, 40, 56);
+  max-width:100%;
+  height:auto;
+  padding-top:159x;
+ 
+  }
+}
+
+@media screen and (max-width: 767px){
+  .boxs11{
+    flex: 1;
+    height: auto;
+    border: 0px solid rgb(182, 102, 102);
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    max-width:100%;
+   
+  }
+}
+
+.boxs11{
+  flex:1;
+  height:auto;
+  border:0px solid rgb(182, 102, 102);
+  display:flex;
+  flex-direction:column;
+  margin-left:35px;
+  width:auto;
+ 
+ 
+
+}
+.boxs22{
+  flex:1;
+  height:auto;
+  border:0px solid rgb(40, 201, 67);
+  margin-right: 0px;
+}
+@media screen and (max-width: 767px){
+  .boxs22{
+    margin-right:20px;
+    margin-left: 2px;
+    margin-top:21px;
+    align-items:center;
+    justify-content:center;
+  }
+}
+
+.ad{
+  height:auto;
+  width:100%;
+
+  max-width:100%;
+}
+.tuff{
+    display: flex;
+    flex-direction:row ;
+    margin-top:88px;
+}
+img.circled{
+    height:50px;
+    width: 50px;
+    display:flex;
+    flex-direction:column;
+   
+    margin:auto;
+    border-radius: 50%;
+    border:1px solid blue;
+    margin-left:161px;
+    margin-top:85px;
+}
+img.circled2{
+    height:50px;
+    width: 50px;
+   
+    margin:auto;
+    border-radius: 50%;
+    border:1px solid blue;
+    margin-left:336px;
+    margin-top:-92px;
+}
+
+
+
+
+hr{
+  background-color: black;
+    width: 1%;
+    margin-top: 0px;
+    margin-bottom: -1px;
+    border: 0;
+    border-top: 2px solid black;
+}
+
+div.lastim{
+  
+}
+.resp {
+  max-width: 40%;
+  height: 60%;
+  margin-top:27px;
+  display:flex;
+  flex-direction:column;
+}
+
+div.h11{
+  align-items:left;
+  justify-content:space-between;
+}
+
+.box-101{
+
+flex:1;
+height:200px;
+color:white;
+border:0px solid rgb(53, 35, 35);
+height:auto;
+width:100%;
+background-color: #e0ebeb;
+}
+.box-202{
+
+flex:1;
+height:auto;
+color:white;
+border:0px solid rgb(53, 35, 35);
+background-color: #e0ebeb;
+width:100%;
+}
+.box-303{
+
+flex:3;
+height:auto;
+color:white;
+border:0px solid rgb(53, 35, 35);
+background-color:  #e0ebeb;
+width:100%;
+}
+
+div h15.l{
+  font-size:26px;
+  color:  #e0ebeb;
+}
+
+
+/* about us */
+
+.container10{
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:400px;
+    color:aqua;
+    
+}
+@media screen and (max-width:767px){
+    div.container10{
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+    margin-bottom:359px;
+   } 
+}
+.responsive-1{
+    width:150px;
+    height:100px;
+    margin-left:37px;
+    margin-right:auto;
+    margin-bottom:12px;
+    margin-top: 58px;
+    border-radius:10px 10px 10px 10px;
+
+}
+.responsive-2{
+    width:100px;
+    height:100px;
+    margin-left:150px;
+    margin-right:auto;
+    border-radius:10px 10px 10px 10px;
+}
+.responsive-3{
+    width:188px;
+    height:74%;
+    margin-left:10px;
+    margin-right:19px;
+    border-radius:10px 10px 10px 10px;
+}
+@media screen and (max-width:767px){
+  .responsive-1{
+    margin-left:-39px;
+    margin-right:auto;
+    margin-bottom:12px;
+    margin-top: 58px;
+  }
+}
+@media screen and (max-width:767px){
+  .responsive-2{
+    margin-left:-115px;
+    margin-right:auto;
+    margin-bottom:12px;
+    margin-top: 288px;
+    width:110px;
+    height:100px;
+  }
+}
+@media screen and (max-width:767px){
+  .responsive-3{
+    margin-left:123px;
+    margin-right:auto;
+    margin-bottom:36px;
+    margin-top: -271px;
+    width:133px;
+    height: 220px;
+  }
+}
+h4.text-left{
+  color:black;
+  font-size:26px;
+}
+div.li{
+justify-content:center;
+margin-left:141px;
+}
+.littlebox-1{
+  display:flex;
+  flex-direction:column;
+}
+div.ji{
+ 
+ margin-left:324px;
+ margin-bottom: 29px;
+ font:3vw;
+}
+div.h13{
+  justify-content:center;
+}
+
+h2{
+  color: rgb(8, 22, 24);;
+}
+/* Heading Box */
+
+.container00 {
+   display:flex;
+   flex-direction: row;
+    max-width: 100%;
+    margin-top:-63px;
+}
+
+.on {
+    background-color:   #e0ebeb;
+    display: flex;
+    flex-direction:column;
+    float: left;
+    height: 400px;
+    width: 100%;
+}
+
+.off {
+    background-color:  #e0ebeb;
+    display: flex;
+    flex-direction:column;
+    float: right;
+    height: 400px;
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .container00 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.respop{
+    
+    width: 100%;
+  height: 259px;
+  padding:17px;
+}
+h1.text-center{
+  font-family: "Times New Roman", Times, serif;
+}
+img.logo{
+  width:60px;
+  margin-left:172px;
+  margin-top:14px;
+}
+@media screen and (max-width:767px){
+  img.logo{
+    margin-left:44px;
+  }
+}
+.navbar-inverse{
+  padding-left:162px ;
+}
+@media screen and (max-width: 767px){
+   .navbar-brand{
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 33px;
+    
+   }
+}
+@media screen and (max-width: 767px){
+  .navbar-inverse{
+   
+   padding-left:0;
+}
+} 
+button.bt{
+  color:blue;
+  border-radius: 16px 16px 16px 16px;
+  height:34px;
+  width: 270px;
+  text-align:left;
+  background-color:white;
+  border:0px solid black;
+  justify-content:center;
+  margin-top: 16px;
+ 
+ 
+}
+button.bt-1{
+  color:white;
+  border-radius: 16px 16px 16px 16px;
+  width: 105px;
+  height:34px;
+  background-color:#4775d1;
+  border:0px solid black;
+  justify-content:center;
+ 
+  
+}
+.small-container {
+    text-align: center;
+   
+    border-radius: 45px 45px 45px 45px;
+    height: 71px;
+    width: 35%;
+    margin-left: 380px;
+    background-color:  #e0ebeb;
+    max-width:100%;
+    margin:auto;
+}
+@media screen and (max-width:1043px){
+  .small-container{
+   margin-left:49px;
+   width:81%;
+   margin:auto;
+  }
+}
+@media screen and (max-width:767px){
+  button.bt-1{
+    max-width:50%;
+  }
+}
+@media screen and (max-width:767px){
+  button.bt{
+    max-width:50%;
+  }
+}
+p#mypara{
+  color: black;
+  font-family:"Times New Roman", Times, serif;
+  width:84%;
+}
+@media screen and (max-width:767px){
+  p#mypara{
+  margin-left:27px;
+ }
+}
+@media screen and (max-width:767px){
+  h4.text-left{
+    margin-left:27px;
+  }
+}
+@media screen and (max-width:767px){
+  a.read-more{
+    margin-left:27px;
+  }
+}
+@media screen and (max-width:767px){
+  img.ad{
+      width:150%;
+      margin-left:-16px;
+  }
+  
+}
+@media screen and (max-width:767px){
+  p.text-center{
+    font-size:2vw;
+  }
+}
+p.ok{
+margin-left:115px;
+}
+@media screen and (max-width:767px){
+  p.ok{
+    margin-left:190px;
+  }
+}
+p.okeda{
+  margin-left:293px;
+  margin-top:-29px;
+}
+@media screen and (max-width:767px){
+  p.okeda{
+    margin-left:190px;
+  }
+}
+@media screen and (max-width:767px){
+  div.li{
+    margin-left: 36%;
+  }
+}
+@media screen and (max-width:767px){
+img.circled{
+  margin-left:230px;
+  margin-top:85px;
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+}
+}
+@media screen and (max-width:767px){
+  div.ji{
+    margin:auto;
+  }
+}
+@media screen and (max-width:767px){
+img.circled2{
+  margin-left:230px;
+  margin-top:85px;
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+}
+}
+
+@media screen and (max-width:767px) {
+  .read-more{
+    margin-left:24px;
+    margin-bottom:6px;
+  }
+}
+
+.pager li>a{
+  margin-left:107px;
+  margin-top: -16px;
+  margin-right: -175px;
+}
+@media screen and (max-width:767px){
+  .pager li>a{
+    margin-right:30px;
+    margin:auto;
+  }
+}
+/* Advantages */
+.colummn {
+    float: left;
+    width: 49.3%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+@media screen and (max-width:767px){
+  div.row{
+    
+    width:105%;
+    }
+}
+@media screen and (max-width: 767px) {
+    div.colummn {
+        width: 100%;
+    }
+} 
+@media screen and (max-width: 767px){
+  img.avatar{
+    vertical-align: middle;
+    width: 54px;
+    height: 51px;
+    border-radius: 50%;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 6px;
+  }
+}
+.avatar {
+  vertical-align: middle;
+  width: 54px;
+  height: 51px;
+  border-radius: 50%;
+  margin:4px;
+  display:flex;
+  flex-direction:row;
+  margin-left:21px;
+  
+ 
+}
+.avatar:hover{
+    border:28px solid white;
+    
+ 
+}
+
+
+div.hlo1{
+  border-left:5px solid #e9dada;
+  border-width: 3px;
+  margin-left:52px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-bottom: 2px;
+
+}
+div.hlo1:hover{
+    
+ 
+ 
+}
+div.hlo2{
+  border-left:5px solid white;
+  border-width: 3px;
+  margin-left:52px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-bottom: 2px;
+
+}
+div.hlo2:hover{
+   
+ 
+ 
+}
+div.hlo3{
+  border-left:5px solid white;
+  border-width: 3px;
+  margin-left:52px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-bottom: 2px;
+}
+div.hlo3:hover{
+ 
+ 
+ 
+}
+div.hlo4{
+  border-left:5px solid white;
+  border-width: 3px;
+  margin-left:52px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-bottom: 2px;
+}
+div.hlo4:hover{
+    
+   
+ 
+ 
+}
+p#f{
+  font-size:1vw;
+}
+h20{
+margin-bottom:-17px;
+color:white;
+}
+
+.advantage{
+  height:250px;
+  width:92%;
+  padding-bottom:8px;
+  padding-left:20px;
+}
+@media screen and (max-width: 767px){
+  .advantage{
+    padding-top:16px;
+    margin-left: 9px;
+  }
+}
+.container-fluid3{
+  background-color:rgb(54, 54, 54);
+  width:100%;
+}
+@media screen and (max-width:767px){
+  .container-fluid3{
+    width:100%;
+  }
+}
+*{
+  margin:0;
+}
+html,body{
+    overflow-x: hidden;
+}
+p.t{
+  text-align:center;
+  background-color:rgb(54,54,54);
+  color:white;
+  margin-bottom: 0;
+  margin-right:0px;
+}
+.row{
+  width:103%;
+}
+@media screen and (ax-width:767px){
+  .littlebox{
+    margin:auto;
+  }
+}
+div.littlebox{
+  margin:auto;
+  
+}
+@media screen and (max-width:510px){
+   .col-sm-3{
+margin-top:0;
+  }
+}
+@media screen and (max-width:500px){
+  img.img-fluid{
+    margin-top:29px;
+  }
+}
+
+</style>
+<body>
+  <img src="/home/technaureus/Desktop/complete/images/logo1.png" class="logo">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class=""><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Offer</a></li>
+    </ul>
+    <ul class="pager">
+      &nbsp;&nbsp;<li><a href="#">ORDER NOW</a>
+
+    </ul>
+    
+</nav>
+  
+<div class="container">
+  <h3 class="text-center">Landing Website</h3>
+  <p class="text-center">This page has a grey background color and a blue text<br>But the majority have suffered alteration in form.Lorem Ipsum<br></p>
+</div>
+<br>
+<div class="small-container">
+<button class="bt">Your e-mail</button>
+<button class="bt-1"> Submit</button>
+</div>
+<br><br><br><br><br>
+<!--ABOUT US-->
+<div class="container10">
+  <div class="box-101">
+    <h15 class="l">box1</h15>
+    <img src="/home/technaureus/Desktop/complete/images/img2.png" class="responsive-1">
+    <img src="/home/technaureus/Desktop/complete/images/img3.png" class="responsive-2">
+
+  </div>
+  <div class="box-202">
+    <h15 class="l">box2</h15>
+    <img src="/home/technaureus/Desktop/complete/images/sky.png" class="responsive-3">
+  </div>
+  <div class="box-303">
+    <h15 class="l"></h15>
+    <h4 class="text-left">About Us</h4>
+        <p id="mypara">
+           This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+          The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+          Try it Yourself"</a> link.
+        </p>
+       <p id="mypara"> In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+           <div class="about-content">
+          <a href="" class="read-more">Read more</a>
+        </div>
+
+  </div>
+</div>
+<br><br><br><br><br><br>
+<div class="container-fluid4">
+  <div class="no5"><b>Features</b></div>
+  <p class="text-center">This page has a grey background color and a blue text But the majority have suffered alteration in form.Lorem Ipsum I've been turning over in my mind ever since. </p>
+</div>
+<!--Features-->
+
+<div class="advacontainer">
+  <div class="boxs11">
+    <img src="/home/technaureus/Desktop/complete/images/pc.png" class="ad" alt="...">
+  </div>
+  <div class="boxs22">
+    <div class="littlebox">
+      <img src="/home/technaureus/Desktop/complete/images/pc.png" class="circled" alt="...">
+      <div class="li"><b>Feature title-1</b><br>This is the paragraph</div>
+     
+    </div>
+    <div class="littlebox-1">
+    
+      <img src="/home/technaureus/Desktop/complete/images/pc.png" class="circled2" alt="...">
+      <div class="ji"><b>Feature title-2</b><br>This is the paragraph</div>
+      
+  </div>
+    </div>
+    </div>
+  </div>
+    
+
+</div>
+<br><br><br>
+
+
+<div class="container-fluid4">
+  <div  class="no8"><b>Advantages</b></div>
+  <p class="t">This page has a grey background color and a blue text But the majority have suffered alteration in form.Lorem Ipsum I've been turning over in my mind ever since. </p>
+</div>
+<!--Advantages-->
+
+<div class="row">
+  
+    <div class="colummn" style="background-color:rgb(54, 54, 54);">
+
+      <div class="hlo1">
+        <img src="/home/technaureus/Desktop/complete/images/b.png" class="avatar" alt="..." ><h20><b id="n">One Main Heading </b><br><p id="f">Dummy text is text that is used in the publishing industry or by </p></h20>
+      
+      </div>
+      <div class="hlo2">
+        <img src="/home/technaureus/Desktop/complete/images/b.png" class="avatar" alt="..."><h20><b>One Main Heading </b><br><p id="f">Dummy text is text that is used in the publishing industry or by </p></h20>
+      </div>
+  
+      <div class="hlo3">
+       <img src="/home/technaureus/Desktop/complete/images/b.png" class="avatar" alt="..."><h20><b>One Main Heading </b><br><p id="f">Dummy text is text that is used in the publishing industry or by </p></h20>
+      </div>
+  
+      <div class="hlo4">
+       <img src="/home/technaureus/Desktop/complete/images/b.png" class="avatar" alt="..."><h20><b>One Main Heading </b><br><p id="f">Dummy text is text that is used in the publishing industry or by </p></h20>
+      </div>
+    </div>
+
+  
+   <div class="colummn" style="background-color:rgb(54, 54, 54);">
+    <img src="/home/technaureus/Desktop/complete/images/pc.png" class="advantage" alt="...">
+   </div>
+ 
+ 
+</div>
+  
+<br><br>
+
+
+
+<!--Best offer-->
+<div class="container-md-fluid">
+  <div class="container-fluid">   
+    <h2 class="text-center">Best Offer</h2>
+    
+    <p class="text-center">This page has a grey background color and a blue text But the majority have suffered alteration in form.Lorem Ipsum. ',  </p>
+    <div class="text-center">
+   
+      <br>
+      
+       <button style="color:white; border:0px; background-color:#4775d1; border-radius:18px 18px 18px 18px; width:120px; height:34px">OFFER NOW</button></a></li>
+  
+      </ul>
+    
+    </div>
+<div class=".col-sm-3">
+  <div class="column">
+  <img src="/home/technaureus/Music/images/3phone.png" class="img-fluid" alt="...">
+      
+      </div>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<!--Heading Box-->
+<div class="container00">
+        <div class="on">
+
+          <img src="/home/technaureus/Desktop/complete/images/car.png" alt="Nature" class="respop">   
+          <h1 class="text-center">Heading One </h1>
+          <p class="text-center" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p class="text-center">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        </div>
+        <div class="off">
+          <img src="/home/technaureus/Desktop/complete/images/car.png" alt="Nature" class="respop">
+          <h1 class="text-center">Heading One </h1>
+          <p class="text-center" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p class="text-center">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        
+        </div>
+      
+
+</div>
+
+<!--footer -->
+
+<div class="footer">
+  <div style="text-align:center">
+    
+   
+   
+  
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a><br>
+<img style="width:80px;" src="/home/technaureus/Desktop/complete/images/footerlog.png" class="pepsi">
+
+</div>
+</div>
+      
+</body>
+</html>
